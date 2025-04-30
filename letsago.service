@@ -1,0 +1,21 @@
+[Unit]
+Description=LetsAGo Vehicle State Monitor
+Documentation=https://github.com/rescoot/letsago
+After=network.target redis-server.service
+Wants=redis-server.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/letsago
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+ProtectSystem=full
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
