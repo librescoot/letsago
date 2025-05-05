@@ -1,6 +1,6 @@
 # Let's-a-go - Vehicle State Monitor
 
-A lightweight Go tool that monitors the vehicle state in Redis and updates the dashboard when the vehicle is ready to drive.
+A lightweight Go tool that monitors the vehicle state in Redis and immediately sets the vehicle to ready to drive after unlocking.
 
 ## Features
 
@@ -105,3 +105,7 @@ journalctl -u letsago
 - Main logic is in `main.go`
 - Modify Redis connection details or behavior in the constants section
 - Use `make` to build for local testing
+
+## License
+
+[AGPL 3.0](LICENSE.md)
