@@ -2,6 +2,8 @@
 
 A lightweight Go tool that monitors the vehicle state in Redis and immediately sets the vehicle to ready to drive after unlocking.
 
+Part of the [Librescoot](https://librescoot.org/) open-source platform.
+
 ## Features
 
 - Connects to Redis at 192.168.7.1:6379
@@ -108,4 +110,11 @@ journalctl -u letsago
 
 ## License
 
-[AGPL 3.0](LICENSE.md)
+This project is dual-licensed. The source code is available under the
+[GNU Affero General Public License v3.0][agpl-3.0].
+The maintainers reserve the right to grant separate licenses for commercial distribution; please contact the maintainers to discuss commercial licensing.
+
+[![AGPL v3][agpl-image]][agpl-3.0]
+
+[agpl-3.0]: https://www.gnu.org/licenses/agpl-3.0.en.html
+[agpl-image]: https://www.gnu.org/graphics/agplv3-88x31.png
