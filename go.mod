@@ -2,7 +2,7 @@ module github.com/rescoot/letsago
 
 go 1.22.1
 
-require github.com/librescoot/redis-ipc v0.10.3
+require github.com/librescoot/redis-ipc v0.15.3
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
